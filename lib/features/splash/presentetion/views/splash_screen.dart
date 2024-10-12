@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mr_candy/features/onbording/presentetion/views/onbording_screen.dart';
+
 
 import '../../../../core/utiles/app_images.dart';
 
@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     ),
           () {
         Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) {
-          return OnbordingScreen();
+          return SizedBox();
 
         }));
 
