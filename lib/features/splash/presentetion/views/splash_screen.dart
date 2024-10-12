@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mr_candy/features/onbording/presentetion/views/onbording_screen.dart';
 
 import '../../../../core/utiles/app_images.dart';
 
@@ -17,8 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     ),
           () {
         Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) {
-          return SizedBox();
-
+          return OnbordingScreen();
         }));
 
       },
@@ -27,10 +27,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset(AppImages.logo,
-          height: double.infinity,
-          width: double.infinity,
-          fit: BoxFit.cover),
+      backgroundColor: Color(0xff5C23CD),
+      body: Container(
+        child: Center(
+          child: Image.asset(AppImages.logo,
+
+              height: 100,
+              width: 100,
+              fit: BoxFit.cover),
+        ),
+      )
 
     );
   }
