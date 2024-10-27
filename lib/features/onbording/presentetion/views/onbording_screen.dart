@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mr_candy/features/login/presentation/views/login_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../data/models/onbording_model.dart';
@@ -72,7 +73,7 @@ class OnbordingScreen extends StatelessWidget {
                         onPressed: (){
                           if (index==onbordings.length-1){
                             Navigator.pushReplacement(context,  MaterialPageRoute(builder:(context) {
-                              return SizedBox();
+                              return LoginScreen();
                             },));
                           }else{
                             pageController.animateToPage(index+1, duration: Duration(
